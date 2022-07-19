@@ -8,8 +8,15 @@ import { User } from '../models/user/user';
 })
 
 export class UserUseCases {
-  constructor( private _userGateWay: UserGateway) {}  
+
+  constructor( private _userGateWay: UserGateway ) {}  
+
   getAll () : Observable <Array<User>> {
     return this._userGateWay.getAll();
   }
+
+  getUser(id: number): Observable<Array<User>>{
+    return this._userGateWay.getUser(id);
+  }
+
 }

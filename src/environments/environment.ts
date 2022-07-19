@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: "https://apimocha.com/dmxangular/"
+  url: "https://apimocha.com/dmxclean/"
 };
 
 /*

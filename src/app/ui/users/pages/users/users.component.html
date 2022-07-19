@@ -1,1 +1,7 @@
-<app-users-list></app-users-list>
+<div class="container mt-4">
+    <div class="col-12 d-flex justify-content-end">
+        <button (click)="buscaUsuario()" pButton pRipple type="button" label="find user" class="p-button-raised me-2"></button>
+        <button (click)="buscarTodos()" pButton pRipple type="button" label="reset" class="p-button-raised p-button-secondary"></button>
+    </div>
+    <app-users-list></app-users-list>
+</div>
